@@ -18,11 +18,6 @@ const MainPage = () => {
               alt="costanza-rossi-de-s"
               src={costanzaRossiDeS}
             />
-            {/* <img
-              className={titleSvg}
-              alt="artist-architect-research"
-              src={artArchRes}
-            /> */}
             <div
               style={{
                 display: "flex",
@@ -33,24 +28,28 @@ const MainPage = () => {
                 // margin: "0 auto",
                 // height: "5vh",
               }}>
-              <p
-                style={{
-                  fontWeight: "bold",
-                  fontSize: "7vh",
-                  color: "#786644",
-                  margin: "0 auto",
-                }}>
-                ABOUT
-              </p>
-              <p
-                style={{
-                  fontWeight: "bold",
-                  fontSize: "7vh",
-                  color: "#786644",
-                  margin: "0 auto",
-                }}>
-                PROJECTS
-              </p>
+              <div>
+                <p
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: "7vh",
+                    color: "#786644",
+                    margin: "0 auto",
+                  }}>
+                  ABOUT
+                </p>
+              </div>
+              <div>
+                <p
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: "7vh",
+                    color: "#786644",
+                    margin: "0 auto",
+                  }}>
+                  PROJECTS
+                </p>
+              </div>
             </div>
             <div
               style={{
