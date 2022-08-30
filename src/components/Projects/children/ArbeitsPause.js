@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import proTwo from "../../../assets/pro-two.png";
 import { getClassNames } from "../../../styles/getClassNames";

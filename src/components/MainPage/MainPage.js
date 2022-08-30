@@ -1,7 +1,6 @@
 import React from "react";
-import { getClassNames } from "../../styles/getClassNames";
 import costanzaRossiDeS from "../../assets/title.svg";
-import artArchRes from "../../assets/art-arc-res.svg";
+import { getClassNames } from "../../styles/getClassNames";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
 

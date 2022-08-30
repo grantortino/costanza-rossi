@@ -1,7 +1,7 @@
 import { mergeStyleSets } from "@uifabric/merge-styles";
 
 export const getClassNames = () => {
-  const col1 = "#C7B699";
+  // const col1 = "#C7B699";
   const col2 = "#B2AE97";
   return mergeStyleSets({
     body: {

@@ -1,7 +1,7 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import proThreeOne from "../../../assets/pro-three-one.png";
 import proThreeTwo from "../../../assets/pro-three-two.png";
-import { getClassNames } from "../../../styles/getClassNames";
 
 const FeministFormsOfLiving = () => {
   //   const { links } = getClassNames();
