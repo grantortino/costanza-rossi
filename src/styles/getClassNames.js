@@ -26,7 +26,40 @@ export const getClassNames = () => {
       width: "100%",
       marginTop: 16,
     },
+    links: {
+      ":link": {
+        color: "#786644",
+      },
+      ":visited": {
+        color: "#786644",
+      },
+      ":active": {
+        color: "green",
+      },
+      _hover: {
+        color: "green",
+      },
+    },
   });
 };
 
 // spalteLinks, spalteMittel, spalteRechts
+
+// a:link {
+//   color: red;
+// }
+
+// /* visited link */
+// a:visited {
+//   color: green;
+// }
+
+// /* mouse over link */
+// a:hover {
+//   color: hotpink;
+// }
+
+// /* selected link */
+// a:active {
+//   color: blue;
+// }
