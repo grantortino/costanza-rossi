@@ -29,15 +29,19 @@ export const getClassNames = () => {
     links: {
       ":link": {
         color: "#786644",
+        textStyle: "none",
       },
       ":visited": {
         color: "#786644",
+        textStyle: "none",
       },
       ":active": {
         color: "green",
+        textStyle: "none",
       },
       _hover: {
         color: "green",
+        textStyle: "none",
       },
     },
   });

@@ -3,6 +3,7 @@ import { getClassNames } from "../../styles/getClassNames";
 import costanzaRossiDeS from "../../assets/title.svg";
 import artArchRes from "../../assets/art-arc-res.svg";
 import About from "../About/About";
+import Projects from "../Projects/Projects";
 
 const MainPage = () => {
   const { body, spalteLinks, spalteMittel, spalteRechts, titleSvg } =
@@ -54,13 +55,14 @@ const MainPage = () => {
             <div
               style={{
                 widht: "100%",
-                height: "50vh",
+                height: "49vh",
                 backgroundColor: "#fff",
                 overflow: "scroll",
               }}>
               {/* ABOUT - Component */}
-              <About />
+              {/* <About /> */}
               {/* PROJECTS - Component */}
+              <Projects />
             </div>
           </div>
         </div>
