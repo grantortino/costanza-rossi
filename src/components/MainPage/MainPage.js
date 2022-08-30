@@ -7,7 +7,7 @@ const MainPage = () => {
     <>
       <div className={body}>
         <div>
-          <div className={title}>Costanza Rossi de S.</div>
+          <div className={title}>CONA</div>
         </div>
       </div>
     </>
