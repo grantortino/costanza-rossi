@@ -102,6 +102,7 @@ const About = () => {
             “Costanza Rossi: “Debemos sociabilizar el trabajo reproductivo”
           </p>
           <a
+          className={links}
             style={{ fontSize: "2vh" }}
             href="https://www.hypermediamagazine.com/dosieres-hm/
 |creadoras-latinoamericanas-en-berlin/costanza-rossi/">
