@@ -1,23 +1,25 @@
 import { mergeStyleSets } from "@uifabric/merge-styles";
 
 export const getClassNames = () => {
+  const col1 = "#C7B699";
+  const col2 = "#B2AE97";
   return mergeStyleSets({
     body: {
       display: "flex",
       flexDirection: "row",
     },
     spalteLinks: {
-      backgroundColor: "#C7B699",
+      backgroundColor: col2,
       height: "100vh",
       width: "45vh",
     },
     spalteMittel: {
-      backgroundColor: "#C7B699",
+      backgroundColor: col2,
       height: "100vh",
       width: "100%",
     },
     spalteRechts: {
-      backgroundColor: "#C7B699",
+      backgroundColor: col2,
       height: "100vh",
       width: "45vh",
     },
