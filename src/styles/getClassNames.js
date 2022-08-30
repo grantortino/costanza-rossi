@@ -13,5 +13,9 @@ export const getClassNames = () => {
       width: "250vh",
       height: "130vh",
     },
+    title: {
+      fontWeight: 'bolder',
+      fontSize: '30vh'
+    }
   });
 };
