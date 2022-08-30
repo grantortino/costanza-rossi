@@ -60,7 +60,7 @@ const MainPage = () => {
                 overflow: "scroll",
               }}>
               {/* ABOUT - Component */}
-              {/* <About /> */}
+              <About />
               {/* PROJECTS - Component */}
               <Projects />
             </div>
