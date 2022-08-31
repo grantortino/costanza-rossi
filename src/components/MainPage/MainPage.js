@@ -3,9 +3,10 @@ import costanzaRossiDeS from "../../assets/title.svg";
 import { getClassNames } from "../../styles/getClassNames";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
+import { Link } from "react-router-dom";
 
 const MainPage = () => {
-  const { body, spalteLinks, spalteMittel, spalteRechts, titleSvg } =
+  const { body, spalteLinks, spalteMittel, spalteRechts, titleSvg, links } =
     getClassNames();
   return (
     <>
@@ -28,28 +29,39 @@ const MainPage = () => {
                 // margin: "0 auto",
                 // height: "5vh",
               }}>
-              <div>
-                <p
-                  style={{
-                    fontWeight: "bold",
-                    fontSize: "7vh",
-                    color: "#786644",
-                    margin: "0 auto",
-                  }}>
-                  ABOUT
-                </p>
-              </div>
-              <div>
-                <p
-                  style={{
-                    fontWeight: "bold",
-                    fontSize: "7vh",
-                    color: "#786644",
-                    margin: "0 auto",
-                  }}>
-                  PROJECTS
-                </p>
-              </div>
+              <Link to="/about" className={links}>
+                <div>
+                  <p
+                    style={{
+                      fontWeight: "bold",
+                      fontSize: "7vh",
+                      color: "#786644",
+                      margin: "0 auto",
+                      ":hover": {
+                        color: "black",
+                      },
+                    }}>
+                    ABOUT
+                  </p>
+                </div>
+              </Link>
+
+              <Link to="/projects" className={links}>
+                <div>
+                  <p
+                    style={{
+                      fontWeight: "bold",
+                      fontSize: "7vh",
+                      color: "#786644",
+                      margin: "0 auto",
+                      ":hover": {
+                        color: "black",
+                      },
+                    }}>
+                    PROJECTS
+                  </p>
+                </div>
+              </Link>
             </div>
             <div
               style={{
