@@ -1,12 +1,12 @@
 import React from "react";
+import { Element, Link } from "react-scroll";
 import costanzaRossiDeS from "../../assets/title.svg";
 import { getClassNames } from "../../styles/getClassNames";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
-import { Link } from "react-router-dom";
 
 const MainPage = () => {
-  const { body, spalteLinks, spalteMittel, spalteRechts, titleSvg, links } =
+  const { body, spalteLinks, spalteMittel, spalteRechts, titleSvg } =
     getClassNames();
   return (
     <>
@@ -28,8 +28,9 @@ const MainPage = () => {
                 marginTop: 32,
                 // margin: "0 auto",
                 // height: "5vh",
-              }}>
-              <Link to="/about" className={links}>
+              }}
+            >
+              <Link to="firstInsideContainer" containerId="containerElement">
                 <div>
                   <p
                     style={{
@@ -40,13 +41,15 @@ const MainPage = () => {
                       ":hover": {
                         color: "black",
                       },
-                    }}>
+                      cursor: "pointer",
+                    }}
+                  >
                     ABOUT
                   </p>
                 </div>
               </Link>
 
-              <Link to="/projects" className={links}>
+              <Link to="secondInsideContainer" containerId="containerElement">
                 <div>
                   <p
                     style={{
@@ -57,23 +60,32 @@ const MainPage = () => {
                       ":hover": {
                         color: "black",
                       },
-                    }}>
+                      cursor: "pointer",
+                    }}
+                  >
                     PROJECTS
                   </p>
                 </div>
               </Link>
             </div>
             <div
+              id="containerElement"
               style={{
                 widht: "100%",
                 height: "49vh",
                 backgroundColor: "#fff",
                 overflow: "scroll",
-              }}>
+              }}
+            >
               {/* ABOUT - Component */}
-              <About />
+              <Element name="firstInsideContainer">
+                <About />
+              </Element>
+
               {/* PROJECTS - Component */}
-              <Projects />
+              <Element name="secondInsideContainer">
+                <Projects />
+              </Element>
             </div>
           </div>
         </div>
