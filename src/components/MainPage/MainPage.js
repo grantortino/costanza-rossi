@@ -6,8 +6,14 @@ import About from "../About/About";
 import Projects from "../Projects/Projects";
 
 const MainPage = () => {
-  const { body, spalteLinks, spalteMittel, spalteRechts, titleSvg } =
-    getClassNames();
+  const {
+    body,
+    spalteLinks,
+    spalteMittel,
+    spalteRechts,
+    titleSvg,
+    responsiveLinks,
+  } = getClassNames();
   return (
     <>
       <div className={body}>
@@ -28,22 +34,20 @@ const MainPage = () => {
                 marginTop: 32,
                 // margin: "0 auto",
                 // height: "5vh",
-              }}
-            >
+              }}>
               <Link to="firstInsideContainer" containerId="containerElement">
                 <div>
                   <p
+                    className={responsiveLinks}
                     style={{
                       fontWeight: "bold",
-                      fontSize: "7vh",
                       color: "#786644",
                       margin: "0 auto",
                       ":hover": {
                         color: "black",
                       },
                       cursor: "pointer",
-                    }}
-                  >
+                    }}>
                     ABOUT
                   </p>
                 </div>
@@ -52,17 +56,16 @@ const MainPage = () => {
               <Link to="secondInsideContainer" containerId="containerElement">
                 <div>
                   <p
+                    className={responsiveLinks}
                     style={{
                       fontWeight: "bold",
-                      fontSize: "7vh",
                       color: "#786644",
                       margin: "0 auto",
                       ":hover": {
                         color: "black",
                       },
                       cursor: "pointer",
-                    }}
-                  >
+                    }}>
                     PROJECTS
                   </p>
                 </div>
@@ -75,8 +78,7 @@ const MainPage = () => {
                 height: "49vh",
                 backgroundColor: "#fff",
                 overflow: "scroll",
-              }}
-            >
+              }}>
               {/* ABOUT - Component */}
               <Element name="firstInsideContainer">
                 <About />

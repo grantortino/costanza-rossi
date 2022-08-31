@@ -46,6 +46,12 @@ export const getClassNames = () => {
         textDecoration: "none",
       },
     },
+    responsiveLinks: {
+      fontSize: "7vh",
+      "@media(max-width: 600px)": {
+        fontSize: "5vh",
+      },
+    },
   });
 };
 

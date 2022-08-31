@@ -5,16 +5,35 @@ const About = () => {
   const { links } = getClassNames();
   return (
     <div style={{ padding: 32 }}>
-      <div style={{ marginBottom: 64 }}>
-        <p style={{ fontSize: "2vh", fontWeight: "bolder" }}>
-          Artist - Architect - Research
-        </p>
-        {/* <p style={{ fontSize: "2vh" }}>+49 176 39161024</p> */}
-        <p style={{ fontSize: "2vh" }}>
-          <a href="mailto:crossi@zelt.cl" className={links}>
-            crossi@zelt.cl
-          </a>
-        </p>
+      <div style={{ marginBottom: 32 }}>
+        {/* <p style={{ fontSize: "4vh", fontWeight: "Bold", margin: "0 auto" }}>
+          Artist &nbsp; &nbsp; &nbsp;<span style={{ color: "#786644" }}>|</span>{" "}
+          &nbsp; &nbsp; &nbsp; Architect &nbsp; &nbsp; &nbsp;{" "}
+          <span style={{ color: "#786644" }}>|</span> &nbsp; &nbsp; &nbsp;
+          Researcher
+        </p> */}
+        <div
+          style={{
+            border: "0.1px solid #786644",
+            padding: 16,
+            width: "22vh",
+          }}>
+          <p style={{ fontSize: "4vh", fontWeight: "Bold", margin: "0 auto" }}>
+            Artist
+          </p>
+          <p style={{ fontSize: "4vh", fontWeight: "Bold", margin: "0 auto" }}>
+            Architect
+          </p>
+          <p style={{ fontSize: "4vh", fontWeight: "Bold", margin: "0 auto" }}>
+            Researcher
+          </p>
+          {/* <p style={{ fontSize: "2vh" }}>+49 176 39161024</p> */}
+          <p style={{ fontSize: "2vh" }}>
+            <a href="mailto:crossi@zelt.cl" className={links}>
+              crossi@zelt.cl
+            </a>
+          </p>
+        </div>
       </div>
 
       <p style={{ fontSize: "2vh", fontWeight: "bold" }}>Studies</p>
@@ -102,7 +121,7 @@ const About = () => {
             “Costanza Rossi: “Debemos sociabilizar el trabajo reproductivo”
           </p>
           <a
-          className={links}
+            className={links}
             style={{ fontSize: "2vh" }}
             href="https://www.hypermediamagazine.com/dosieres-hm/
 |creadoras-latinoamericanas-en-berlin/costanza-rossi/">
