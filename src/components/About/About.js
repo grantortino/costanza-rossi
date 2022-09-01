@@ -36,7 +36,7 @@ const About = () => {
         </div>
       </div>
 
-      <p style={{ fontSize: "2vh", fontWeight: "bold" }}>Studies</p>
+      {/* <p style={{ fontSize: "2vh", fontWeight: "bold" }}>Studies</p>
 
       <div style={{ display: "flex" }}>
         <p style={{ fontSize: "2vh", marginRight: 17 }}>2020</p>
@@ -54,7 +54,7 @@ const About = () => {
           Chile. “Space of reconciliation between the body and the earth”
           Teacher: Christian Emilfork
         </p>
-      </div>
+      </div> */}
 
       <p style={{ fontSize: "2vh", fontWeight: "bold" }}>Group exhibitions</p>
 
@@ -62,16 +62,19 @@ const About = () => {
         <p style={{ fontSize: "2vh", marginRight: 17 }}>09.2022</p>
         <p style={{ fontSize: "2vh" }}>
           Transtopia. Chilean Conexión. Chilean Festival of Arts in Berlin, 5th
-          Edition. Monopol, Berlin.
+          Edition. Monopol, Berlin.{" "}
+          <span style={{ fontStyle: "italic" }}>
+            "pensar en conversación / thinking by talking"
+          </span>
         </p>
       </div>
 
       <div style={{ display: "flex" }}>
         <p style={{ fontSize: "2vh", marginRight: 17 }}>03.2022</p>
         <p style={{ fontSize: "2vh" }}>
-          Sensing the city - sense of the city. Ausstellung bei ORi
-          künstlerische Bildmedien e.V. 2022 Verschiedenen Künstler*innen, in
-          der das Projekt “Arbeitspause im Görli” ausgestellt wurde
+          Sensing the city - sense of the city. Exhibition in ORi künstlerische
+          Bildmedien e.V. 2022. Berlin, Germany.{" "}
+          <span style={{ fontStyle: "italic" }}>“Arbeitspause im Görli” </span>
         </p>
       </div>
 
@@ -79,16 +82,21 @@ const About = () => {
         <p style={{ fontSize: "2vh", marginRight: 17 }}>08.2021</p>
         <p style={{ fontSize: "2vh" }}>
           Exhibition Preview Rundgang. Masterworks „Art in Context“. Haus der
-          Statistik. Berlin, Germany. https://preview.kunstimkontext.nete
+          Statistik. Berlin, Germany.{" "}
+          <span style={{ fontStyle: "italic" }}>
+            “Feminist forms of living / Excercise Timeline”
+          </span>
         </p>
       </div>
 
       <div style={{ display: "flex" }}>
-        <p style={{ fontSize: "2vh", marginRight: 17 }}>2018</p>
+        <p style={{ fontSize: "2vh", marginRight: 17 }}>03.2018</p>
         <p style={{ fontSize: "2vh" }}>
           Exhibition Empty Pedestals, Removed Monuments. Gallerie OKK - Organ
-          kritischer Kunst. Berlin, Germany. Installation: Medical history
-          granite, pedestal.
+          kritischer Kunst. Berlin, Germany.{" "}
+          <span style={{ fontStyle: "italic" }}>
+            "Medical history granite, pedestal."
+          </span>
         </p>
       </div>
 
@@ -98,19 +106,40 @@ const About = () => {
 
       <div style={{ display: "flex" }}>
         <p style={{ fontSize: "2vh", marginRight: 17 }}>2021</p>
-        <p style={{ fontSize: "2vh" }}>
-          Teaching to Transgress Toolbox. Interview about Questioning the notion
-          of neutrality. http://ttttoolbox.net/home.xhtml.
-        </p>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div>
+            <p style={{ fontSize: "2vh" }}>
+              Teaching to Transgress Toolbox. Interview about Questioning the
+              notion of neutrality.
+            </p>
+          </div>
+          <div>
+            <p style={{ fontSize: "2vh" }}>
+              <a href="http://ttttoolbox.net/home.xhtml" className={links}>
+                http://ttttoolbox.net/home.xhtml
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
 
       <div style={{ display: "flex" }}>
         <p style={{ fontSize: "2vh", marginRight: 17 }}>2020</p>
-        <p style={{ fontSize: "2vh" }}>
-          Maleza Podcast, feministisch-sudaca Aufklärungsmedium. Interview about
-          Feminist living formats. https://open.spotify.com episode/
-          6XRKU933falIrVb797tpsf?si=EwaA9sTVTOCXdybTd_8kBQ
-        </p>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <p style={{ fontSize: "2vh" }}>
+            Maleza Podcast, feministisch-sudaca Aufklärungsmedium. Interview
+            about Feminist living formats.
+          </p>
+          <p style={{ fontSize: "2vh" }}>
+            <a
+              href="https://open.spotify.com episode/
+          6XRKU933falIrVb797tpsf?si=EwaA9sTVTOCXdybTd_8kBQ"
+              className={links}>
+              https://open.spotify.com episode/
+              6XRKU933falIrVb797tpsf?si=EwaA9sTVTOCXdybTd_8kBQ
+            </a>
+          </p>
+        </div>
       </div>
 
       <div style={{ display: "flex" }}>
@@ -133,10 +162,21 @@ const About = () => {
 
       <div style={{ display: "flex" }}>
         <p style={{ fontSize: "2vh", marginRight: 17 }}>2020</p>
-        <p style={{ fontSize: "2vh" }}>
-          Searching feminist living formats. CONVERSAS #49 Haus der Statistik.
-          Berlin, Germany. https://conversasberlin.hotglue.me/49
-        </p>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+          }}>
+          <p style={{ fontSize: "2vh" }}>
+            Searching feminist living formats. CONVERSAS #49 Haus der Statistik.
+            Berlin, Germany.
+          </p>
+          <p style={{ fontSize: "2vh" }}>
+            <a href="https://conversasberlin.hotglue.me/49" className={links}>
+              https://conversasberlin.hotglue.me/49
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   );

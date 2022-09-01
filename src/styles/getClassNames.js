@@ -52,6 +52,10 @@ export const getClassNames = () => {
         fontSize: "5vh",
       },
     },
+    'p': {
+      width: "100%",
+      backgroundColor: "blue",
+    },
   });
 };
 
