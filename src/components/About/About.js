@@ -14,20 +14,19 @@ const About = () => {
         </p> */}
         <div
           style={{
-            border: "0.1px solid #786644",
+            border: "5px dotted #786644",
             padding: 16,
-            width: "22vh",
+            width: "12.5vh",
           }}>
-          <p style={{ fontSize: "4vh", fontWeight: "Bold", margin: "0 auto" }}>
-            Artist
-          </p>
-          <p style={{ fontSize: "4vh", fontWeight: "Bold", margin: "0 auto" }}>
+          {/* <p style={{ fontSize: "4vh", fontWeight: "Bold", margin: "0 auto" }}>
+            Contact
+          </p> */}
+          {/* <p style={{ fontSize: "4vh", fontWeight: "Bold", margin: "0 auto" }}>
             Architect
           </p>
           <p style={{ fontSize: "4vh", fontWeight: "Bold", margin: "0 auto" }}>
             Researcher
-          </p>
-          {/* <p style={{ fontSize: "2vh" }}>+49 176 39161024</p> */}
+          </p> */}
           <p style={{ fontSize: "2vh" }}>
             <a href="mailto:crossi@zelt.cl" className={links}>
               crossi@zelt.cl
